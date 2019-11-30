@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getbootstrap.com/docs/4.0/examples/product/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Automatic butler to make your calls for you and connect conditionally.">
+    <meta name="author" content="pseudozach">
+    <link rel="icon" href="yaver512.png">
+
+    <title>Yaver | Your Personal Call Connector</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./file/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet">
+    <link href="css/example.css" rel="stylesheet"> 
+
+    <!-- Custom styles for this template -->
+    <link href="./file/product.css" rel="stylesheet">
+</head>
+
+  <body>
+
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href=".">
+          <img src="yaver512.png" style="height:1.5rem;"/> 
+          <span class="ml-1 d-md-inline-block" style="vertical-align: middle;">Yaver</span>
+        </a>
+        <!-- <a class="py-2 d-md-inline-block" href=".">Yaver</a> -->
+        <!-- <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.0/examples/product/#">Product</a>
+        <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.0/examples/product/#">Features</a>
+        <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.0/examples/product/#">Enterprise</a>
+        <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.0/examples/product/#">Support</a>
+        <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.0/examples/product/#">Pricing</a>
+        <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.0/examples/product/#">Cart</a> -->
+      </div>
+    </nav>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light">
+      <div class="col-md-5 p-lg-1 mx-auto">
+        <h1 class="display-4 font-weight-normal">🎩 Yaver will connect your calls 📞</h1>
+        <p class="lead font-weight-normal">1. I will call a number you want to reach (e.g. Rock 107 Radio Station) 🤙</p>
+        <p class="lead font-weight-normal">2. Ask any question (e.g. am I the 107th caller?) ❓</p>
+        <p class="lead font-weight-normal">3a. If they say no, I will hang up and call again 🔁</p>
+        <p class="lead font-weight-normal">3b. If they say yes, I will connect your call 🙌</p>
+        <!-- <p class="lead font-weight-normal"> You win the prize!</p> -->
+        <button type="button" class="btn btn-secondary" style="margin: auto; display: block;margin-top: 20px;" id="signin-button">Login with Blockstack to Start</button>
+        <button type="button" class="btn btn-secondary" style="margin: auto; display: none;margin-top: 20px;" id="signout-button">Log out</button>
+        <a class="btn m-3" href="#stepper4trigger1" id="anonlogin">or Use Anonymously</a>
+      </div>
+      <div class="product-device box-shadow d-none d-md-block" style="background: url(Chat.png) right no-repeat;background-size: 20rem;">
+      </div>
+      <div class="product-device product-device-2 box-shadow d-none d-md-block" id="asdasd" style="background: url(Headhunter.png) right no-repeat;background-size: 20rem;"></div>
+    </div>
+
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div id="stepper4" class="bs-stepper vertical linear">
+          <div class="bs-stepper-header" role="tablist">
+            <div class="step active" data-target="#test-vl-1">
+              <button type="button" class="step-trigger" role="tab" id="stepper4trigger1" aria-controls="test-vl-1" aria-selected="true">
+                <span class="bs-stepper-circle">1</span>
+                <span class="bs-stepper-label">Number to Call</span>
+              </button>
+            </div>
+            <div class="bs-stepper-line"></div>
+            <div class="step" data-target="#test-vl-2">
+              <button type="button" class="step-trigger" role="tab" id="stepper4trigger2" aria-controls="test-vl-2" aria-selected="false" disabled="disabled">
+                <span class="bs-stepper-circle">2</span>
+                <span class="bs-stepper-label">Your Number</span>
+              </button>
+            </div>
+            <div class="step" data-target="#test-vl-3">
+              <button type="button" class="step-trigger" role="tab" id="stepper4trigger3" aria-controls="test-vl-3" aria-selected="false" disabled="disabled">
+                <span class="bs-stepper-circle">3</span>
+                <span class="bs-stepper-label">What to say?</span>
+              </button>
+            </div>
+            <div class="step" data-target="#test-vl-4">
+              <button type="button" class="step-trigger" role="tab" id="stepper4trigger4" aria-controls="test-vl-4" aria-selected="false" disabled="disabled">
+                <span class="bs-stepper-circle">4</span>
+                <span class="bs-stepper-label">Repeat Count</span>
+              </button>
+            </div>
+            <div class="bs-stepper-line"></div>
+            <div class="step" data-target="#test-vl-5">
+              <button type="button" class="step-trigger" role="tab" id="stepper4trigger5" aria-controls="test-vl-5" aria-selected="false" disabled="disabled">
+                <span class="bs-stepper-circle">5</span>
+                <span class="bs-stepper-label">Submit</span>
+              </button>
+            </div>
+          </div>
+          <div class="bs-stepper-content">
+            <form onsubmit="return false">
+              <div id="test-vl-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block" aria-labelledby="stepper4trigger1">
+                <div class="form-group">
+                  <label for="exampleInputEmailV1">Who should I call over and over?</label>
+                  <input type="phone" class="form-control" id="exampleInputEmailV1" placeholder="+14253219887">
+                </div>
+                <button class="btn btn-primary" onclick="stepper4.next()">Next</button>
+              </div>
+              <div id="test-vl-2" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper4trigger2">
+                <div class="form-group">
+                  <label for="exampleInputPasswordV1">Which number should I connect, when first number answers positively?</label>
+                  <input type="phone" class="form-control" id="exampleInputPasswordV2" placeholder="+14254321212">
+                </div>
+                <button class="btn btn-primary" onclick="stepper4.previous()">Previous</button>
+                <button class="btn btn-primary" onclick="stepper4.next()">Next</button>
+              </div>
+              <div id="test-vl-3" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper4trigger3">
+                <div class="form-group">
+                  <label for="exampleInputPasswordV1">What should I say to the called number?</label>
+                  <input type="text" class="form-control" id="exampleInputPasswordV3" placeholder="Hello Rock 107. Am I the 107th Caller?">
+                </div>
+                <button class="btn btn-primary" onclick="stepper4.previous()">Previous</button>
+                <button class="btn btn-primary" onclick="stepper4.next()">Next</button>
+              </div>
+              <div id="test-vl-4" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper4trigger4">
+                <div class="form-group">
+                  <label for="exampleInputPasswordV1">How many times should I try?</label>
+                  <input type="number" value=2 class="form-control" id="exampleInputPasswordV4" placeholder="2">
+                </div>
+                <button class="btn btn-primary" onclick="stepper4.previous()">Previous</button>
+                <button class="btn btn-primary" onclick="stepper4.next()">Next</button>
+              </div>
+              <!-- <div id="test-vl-2" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper4trigger2">
+                <div class="form-group">
+                  <label for="exampleInputPasswordV1">Positive Response</label>
+                  <input type="text" class="form-control" id="exampleInputPasswordV1" placeholder="Password">
+                </div>
+                <button class="btn btn-primary" onclick="stepper4.previous()">Previous</button>
+                <button class="btn btn-primary" onclick="stepper4.next()">Next</button>
+              </div>
+              <div id="test-vl-2" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper4trigger2">
+                <div class="form-group">
+                  <label for="exampleInputPasswordV1">Negative</label>
+                  <input type="text" class="form-control" id="exampleInputPasswordV1" placeholder="Password">
+                </div>
+                <button class="btn btn-primary" onclick="stepper4.previous()">Previous</button>
+                <button class="btn btn-primary" onclick="stepper4.next()">Next</button>
+              </div> -->
+
+              <div id="test-vl-5" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper4trigger5">
+                <button class="btn btn-primary mt-5" onclick="stepper4.previous()">Previous</button>
+                <button type="submit" class="btn btn-primary mt-5" id="submitbutton">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-5">* Remember to not spam or annoy anyone. By using this service, you agree to  <a href="tos.html" target="_blank" style="margin-left:0.5rem;"> Terms and Conditions.</a></div>
+
+
+    <!-- payment modal -->
+    <div class="modal fade" id="pickCardModal" tabindex="-1" role="dialog" aria-labelledby="pickCardModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+<!--
+          <div class="modal-header">
+            <h5 class="modal-title" id="pickCardModalTitle">Payment</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+-->
+          <div class="modal-body">
+              <p style="text-align: center;" id="feetext">Price: <b id="feesatoshi">100</b><b> Satoshis</b></p>
+
+            <div class="four columns" id="qrcodeholder">
+            </div>
+            <div class="four columns" style="margin-top: 20px;">
+              <!-- <i class="fa fa-btc"></i> -->
+                <div style="display: flex;">
+                  <input id="lninvoiceholder" style="word-wrap: break-word;overflow: hidden;white-space: nowrap;flex: 1 1 auto;" class="selectable" onclick="this.select();" readonly/>
+<!--                  </input>-->
+                    <a href="javascript:;" class="btn btn-outline-primary m-0 px-3 py-2 z-depth-0" id="openwithwallet" style="display: block;">
+                         Pay with Wallet
+                        <!-- <i class="fas fa-bolt"></i> -->
+                      </a>
+                    <button class="btn btncopy btn-md btn-outline-primary m-0 px-3 py-2 z-depth-0 waves-effect" type="button" data-clipboard-target="#lninvoiceholder" style="display: inline; float: right;" id="copyinvoicebutton">
+                      <!-- <i class="fas fa-copy ml-2" aria-hidden="true"></i>  -->
+                    Copy</button>
+                </div>
+              <br/>
+                <!-- <a style="text-align: center;margin: 10px;display: block;" href="http://bit.ly/2VaDQMC" target="_blank">👋 Don't have a wallet? Click here to install bitlum.io browser wallet and get $0.10 free bonus 🎉</a> -->
+              <!-- ⚡ -->
+<!--
+              <a href="javascript:;" class="btn btn-primary" id="openwithwallet" style="display: block;">
+                <i class="fab fa-bitcoin"></i> Pay with Wallet</a>
+-->
+              <br/>
+              <!-- <div id="timeleftholder" style="text-align: center;margin-bottom: 10px;">Invoice expires in : <span id="timeleftoninvoice"></span></div> -->
+            </div>
+
+            <div>
+              <div class="circle-loader" id="checkmarkholder">
+                <div class="checkmark draw"></div>
+              </div>
+              <br/>
+              <div  id="paymentstatus" style="text-align: center;">Awaiting payment...</div>
+            </div>
+
+          </div>
+<!--
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline btn-blue-grey waves-effect" data-dismiss="modal" id="pickCardCloseButton">Close</button>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+   <!--  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+      <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+    </div> -->
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="yaver512.png" style="height:3rem;"/>
+          <small class="d-block mb-3 text-muted">© 2019</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Other Things</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="https://kriptode.com">Lightning Games & Services</a></li>
+            <li><a class="text-muted" href="https://getanswer.app">Ask & Answer for Bitcoin</a></li>
+            <!-- <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Team feature</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Another one</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Last time</a></li> -->
+          </ul>
+        </div>
+        <!-- <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Resource</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Resource name</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Another resource</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Final resource</a></li>
+          </ul>
+        </div> -->
+        <!-- <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Business</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Education</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Government</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Team</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Locations</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Privacy</a></li>
+            <li><a class="text-muted" href="https://getbootstrap.com/docs/4.0/examples/product/#">Terms</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./file/jquery-3.4.1.min.js"></script>
+   <!--  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script> -->
+    <script src="./file/popper.min.js"></script>
+    <script src="./file/bootstrap.min.js"></script>
+    <script src="./file/holder.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+
+
+
+    <script src="https://unpkg.com/blockstack@19.2.1/dist/blockstack.js" integrity="sha384-+qYCYoUGzsMLAzHm80c4DyhbWgHBBb2N0RFqsg7Lws5ljtBtj/IwpgxZkiR7j7lp" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD1aDBhRrp90y_P2NFOfDlKTBSsqRtYKU8",
+        authDomain: "yunik2-1014b.firebaseapp.com",
+        databaseURL: "https://yunik2-1014b.firebaseio.com",
+        projectId: "yunik2-1014b",
+        storageBucket: "yunik2-1014b.appspot.com",
+        messagingSenderId: "1091513541084"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="js/qrcode.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/snackbar.min.css" />
+    <script src="js/snackbar.min.js"></script>
+    <!-- <script src="deck.js"></script> -->
+    <script>
+    var ismainnet = false;
+//        $(function () {
+//
+//        });
+    </script>
+      
+      <script
+      src="https://unpkg.com/webln@0.1.0/dist/webln.min.js"
+      integrity="sha384-KbiwDLn7g4wD+1fs5EA/1c6p4Zzy0u8RwWObPvI+ty1WpALihdyvjF7/yKJzJk/I" crossorigin="anonymous"
+    ></script>
+      
+      <script src="js/clipboard.min.js"></script>
+      <script type="text/javascript" src="caller.js"></script>
+
+</body></html>

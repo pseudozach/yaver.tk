@@ -1,0 +1,10 @@
+{
+   "name": "Yaver",
+   "start_url": "https://yaver.tk",
+   "description": "Automated phone calls and call connector.",
+   "icons": [{
+     "src": "https://yaver.tk/yaver512.png",
+     "sizes": "192x192",
+     "type": "image/png"
+   }]
+ }

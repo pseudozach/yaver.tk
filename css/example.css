@@ -1,0 +1,203 @@
+/*
+.card {
+    cursor: pointer;
+}
+.view {
+    cursor: pointer;
+}
+*/
+.badge {
+    font-size: 125%;
+    font-weight: 300;
+}
+.zcenter {
+    margin: auto;
+    display: block;
+}
+
+
+.lds-ring {
+  display: block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #2bbbad transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+.circle-loader {
+  margin: 0 0 30px 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-left-color: #03A9F4;
+  animation-name: loader-spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  margin: auto;
+    display: block;
+}
+.circle-loader, .circle-loader:after {
+  border-radius: 50%;
+  width: 8em;
+  height: 8em;
+}
+.load-complete {
+  -webkit-animation: none;
+  animation: none;
+  color: #5cb85c;
+  border-color: #5cb85c;
+  transition: border 500ms ease-out;
+}
+.checkmark {
+  display: none;
+}
+.checkmark.draw:after {
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-name: checkmark;
+  transform: scaleX(-1) rotate(135deg);
+}
+.checkmark:after {
+  opacity: 1;
+  height: 4em;
+  width: 2em;
+  transform-origin: left top;
+  border-right: 2px solid #5cb85c;
+  border-top: 2px solid #5cb85c;
+  content: '';
+  left: 2em;
+  top: 4em;
+  position: absolute;
+}
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 2em;
+    opacity: 1;
+  }
+  40% {
+    height: 4em;
+    width: 2em;
+    opacity: 1;
+  }
+  100% {
+    height: 4em;
+    width: 2em;
+    opacity: 1;
+  }
+}
+
+img {
+  margin: auto;
+}
+
+.selectable {
+  -moz-user-select: text;
+-khtml-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+user-select: text;
+word-wrap: break-word;
+}
+
+.cardhead {
+/*
+    margin: auto; 
+    display: block; 
+*/
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    color:ghostwhite;
+/*    margin-bottom: 0;*/
+}
+
+#lninvoiceholder:focus {
+  border-color: #03A9F4 !important;
+  box-shadow: 0 0 5px rgba(3, 168, 244, 1) !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: none;
+}
+#votebutton, .optioncountcl, #votetypedropdown{
+    display: block;
+}
+
+.blockquote span{
+    font-size:1rem;
+}
+.flexit{
+    flex: 1 1 auto;
+}
+
+.nohover {
+  pointer-events: none;
+}
+
+.betyacolor {
+  background-color: #03A9F4;
+}
+
+.pressedbutton {
+   /* -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;*/
+}
+.depressedbutton {
+  opacity: 0.2;
+}
+
+.unclickable{
+  pointer-events: none;
+}
